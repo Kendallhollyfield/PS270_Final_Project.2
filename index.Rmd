@@ -1,6 +1,6 @@
 ---
-title: "PS270 Final Project"
-author: "Your Name Here"
+title: "PS270 Final Project.2"
+author: "Kendall Hollyfield"
 description: "My final project"
 output:
   distill::distill_article:
@@ -11,4 +11,14 @@ output:
 
 ## Project thoughts
 
-I am interested in exploring data related to...
+I am interested in exploring data related to social media and how it impacts political behavior. I think that will be very interesting because we all have social media and do not always understand how it impacts our political behavior. 
+
+```{r}
+data <- read.csv("~/Documents/social_media.2.csv")
+library(tidyverse)
+library(dplyr)
+glimpse(data)
+```
+
+## Write Up
+My research question is, does the amount of social media platforms someone have impact their polarization about the 2020 political candidates. I believe that yes, the more social media platforms someone has, the more polarized they will be. This is because, on all platforms people are exposed to echo-chambers to their own beliefs and become more polarized as a result. This is because users online select the content that they want to see, and therefore see more content that furthers their beliefs.The explanatory or independent variable is the amount of social media accounts someone might be currently using (0-4), which will be measured through the data frame, as it records if the respondent is currently using instagram, snapchat, facebook, or twitter. The dependent variable will be how high or low they rated numerous political groups/figures. For example, they rated on a scale from 1-100 how they felt about Donald Trump, Joe Biden, the NRA, and immigrants, among others. I would likely choose one or a few of these to make an average polarization as my dependent variable. A large amount of extremely high or low scores would mean one was very polarized. Many individuals with high social media use and a high polarization rate would prove my hypothesis, because that would mean there was a correlation between social media and polarization. If there were a large amount of respondents that had a lot of social media accounts and did not have a noticable trend of polarization, that would disprove my hypothesis. 
